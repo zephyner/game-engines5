@@ -1,0 +1,9 @@
+﻿  CoreEngine.cpp
+  Main.cpp
+  Window.cpp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+D:\Desktop\Sam4\GameEngine4\GameEngine\GameEngine\Engine\Core\CoreEngine.cpp(14): warning C4722: 'CoreEngine::~CoreEngine': destructor never returns, potential memory leak
+  All 112 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  GameEngine.vcxproj -> D:\Desktop\Sam4\GameEngine4\GameEngine\Release\GameEngine.exe
