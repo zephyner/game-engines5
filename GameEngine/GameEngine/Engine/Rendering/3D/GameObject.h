@@ -2,6 +2,7 @@
 #define GAMEOBJECT_H 
 
 #include "Model.h"
+#include "Component.h"
 
 class GameObject
 {
@@ -20,7 +21,7 @@ public:
 	BoundingBox GetBoundingBox();
 	std::string GetTag() const;
 	bool GetHit() const;
-
+	
 	void SetPosition(glm::vec3 Position_);
 	void SetAngle(float angle_);
 	void SetRotation(glm::vec3 rotation_);
@@ -29,7 +30,17 @@ public:
 	void SetHit(bool hit_, int buttonType_);
 	void OnDestroy();
 
+	//component add it here
+	template <class T>
+	void AddComponent() {}
+	template <class T>
+	T* GetComponent() {}
+	template <class T>
+	void RemoveComponent() {}
+
 private:
+
+	std::vector<Component*> Containters;
 	Model* model;
 	glm::vec3 position;
 	float angle;

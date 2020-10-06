@@ -1,5 +1,7 @@
 #include "GameObject.h"
 
+
+
 GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr)
 {
 	model = model_;
@@ -23,6 +25,7 @@ GameObject::~GameObject(){
 void GameObject::OnDestroy()
 {
 	model = nullptr;
+	Containters.clear();
 }
 
 void GameObject::Render(Camera* camera_)
@@ -36,6 +39,7 @@ void GameObject::Render(Camera* camera_)
 void GameObject::Update(const float deltaTime_)
 {
 	SetAngle(angle + 0.005f);
+	
 }
 
  glm::vec3 GameObject::GetPosition() const
@@ -103,7 +107,6 @@ void GameObject::SetScale(glm::vec3 scale_)
 	
 }
 
-//scenegraph stuff week 11
 void GameObject::SetTag(std::string tag_)
 {
 	tag = tag_;
@@ -127,3 +130,4 @@ void GameObject::SetHit(bool hit_, int buttonType_)
 	}
 
 }
+
