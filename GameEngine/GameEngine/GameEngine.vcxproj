@@ -56,6 +56,7 @@
     <ClInclude Include="Engine\Math\BoundingBox.h" />
     <ClInclude Include="Engine\Math\Ray.h" />
     <ClInclude Include="Engine\Rendering\3D\Component.h" />
+    <ClInclude Include="Engine\Rendering\3D\Container.h" />
     <ClInclude Include="Engine\Rendering\3D\GameObject.h" />
     <ClInclude Include="Engine\Event\EventListener.h" />
     <ClInclude Include="Game\Scenes\GameScene.h" />

@@ -41,6 +41,7 @@ public:
 private:
 
 	std::vector<Component*> Containters;
+
 	Model* model;
 	glm::vec3 position;
 	float angle;

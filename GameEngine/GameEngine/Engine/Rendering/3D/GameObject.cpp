@@ -19,7 +19,8 @@ GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr)
 	}
 
 }
-GameObject::~GameObject(){
+GameObject::~GameObject()
+{
 	OnDestroy();
 }
 void GameObject::OnDestroy()
@@ -39,7 +40,6 @@ void GameObject::Render(Camera* camera_)
 void GameObject::Update(const float deltaTime_)
 {
 	SetAngle(angle + 0.005f);
-	
 }
 
  glm::vec3 GameObject::GetPosition() const
