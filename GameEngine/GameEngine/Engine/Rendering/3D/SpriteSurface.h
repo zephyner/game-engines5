@@ -28,12 +28,16 @@ public:
 	float GetHeight();
 
 	void SetWidth(float width_);
-	void SetHeight(float height_)
+	void SetHeight(float height_);
 
 private:
+	void GenerateBuffers();
+	
+
 	glm::vec2 scale;
 	float angle, width, height;
 	std::string imagename;
+	GLuint VAO, VBO;
 };
 
 
