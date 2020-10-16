@@ -32,13 +32,73 @@ public:
 
 	//component add it here
 	template <class T>
-	void AddComponent();
+	void AddComponent() 
+	{ 
+		T* = component; 
+		Component* c = dynamic_cast<Component*>(c); 
+		if (!c)
+		{
+			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
+			delete c;
+			c = nullptr;
+			component.clear();
+			return;
+		}
 
-	template <class T>
-	T* GetComponent();
+		Component* b = dynamic_cast<Component*>(b);
+		if (!b)
+		{
+			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
+			delete b;
+			b = nullptr;
+			component.clear();
+			return;
+		}
 
+		Component* a = dynamic_cast<Component*>(a);
+		if (!a)
+		{
+			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
+			delete a;
+			a = nullptr;
+			component.clear();
+			return;
+		}
+	}
 	template <class T>
-	void RemoveComponent();
+	T* GetComponent() 
+	{ 
+		T* = component;
+		int numComponents = 10;
+		for (int component{0}; component < numComponents; component++ )
+		{
+			if (component <= 1)
+			{
+				Component* c = dynamic_cast<Component*>(c);
+				Component* b = dynamic_cast<Component*>(b);
+				Component* a = dynamic_cast<Component*>(a);
+				return;
+			}
+			return 0;
+		}
+	}
+	template <class T>
+	void RemoveComponent() 
+	{
+		T* = component;
+		for (Component* c; Component* b; Component* a; : component)
+		{
+			delete c;
+			c = nullptr;
+
+			delete b;
+			b = nullptr;
+
+			delete a;
+			a = nullptr;
+		}
+		component.clear();
+	}
 
 private:
 

@@ -1,102 +1,103 @@
 ﻿  CollisionHandler.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   CollisionDetection.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6,20): warning C4099: 'BoundingBox': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6,20): warning C4099: 'BoundingBox': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   Camera.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   Debug.cpp
   CoreEngine.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Core\CoreEngine.cpp(10,11): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Core\CoreEngine.cpp(10,11): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
+  Component.cpp
   GameObject.cpp
   EventListener.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   GameScene.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   Game1.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   LightSource.cpp
   LoadOBJModel.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\LoadOBJModel.cpp(163,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\LoadOBJModel.cpp(163,20): warning C4018: '<': signed/unsigned mismatch
   Main.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   Window.cpp
   Timer.cpp
   StartScene.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   Mesh.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\Mesh.cpp(55,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\Mesh.cpp(55,18): warning C4018: '<': signed/unsigned mismatch
   Model.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\Model.cpp(83,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\Model.cpp(83,20): warning C4018: '<': signed/unsigned mismatch
   ShaderHandler.cpp
   TextureHandler.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Graphics\TextureHandler.cpp(61,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Graphics\TextureHandler.cpp(62,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-  MouseEventListener.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(86,44): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(89,27): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(90,27): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(97,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(98,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Graphics\TextureHandler.cpp(61,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Graphics\TextureHandler.cpp(62,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   Generating Code...
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\Component.cpp(16): error C4716: 'Component::OnCreate': must return a value
   Compiling...
+  MouseEventListener.cpp
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(86,44): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(89,27): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(90,27): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(97,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(98,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
   SceneGraph.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
+C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
   MaterialHandler.cpp
   MaterialLoader.cpp
   Generating Code...
-  GameEngine.vcxproj -> C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\Debug\GameEngine.exe
