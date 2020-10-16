@@ -34,36 +34,27 @@ public:
 	template <class T>
 	void AddComponent() 
 	{ 
-		T* = component; 
-		Component* c = dynamic_cast<Component*>(c); 
-		if (!c)
+		T* temp = new T(); 
+		
+		if (dynamic_cast<Component*>(temp) == nullptr)
 		{
 			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
-			delete c;
-			c = nullptr;
-			component.clear();
+			delete temp;
+			temp = nullptr;
 			return;
 		}
 
-		Component* b = dynamic_cast<Component*>(b);
-		if (!b)
+		if (GetComponent<T>() != nullptr)
 		{
 			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
-			delete b;
-			b = nullptr;
-			component.clear();
+			delete temp;
+			temp = nullptr;
 			return;
 		}
 
-		Component* a = dynamic_cast<Component*>(a);
-		if (!a)
-		{
-			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
-			delete a;
-			a = nullptr;
-			component.clear();
-			return;
-		}
+		temp->OnCreate(this);
+		component.push_back(temp);
+
 	}
 	template <class T>
 	T* GetComponent() 
