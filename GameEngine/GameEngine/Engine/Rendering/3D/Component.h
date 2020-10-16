@@ -11,10 +11,10 @@ class Component
 {
 public:
 
-	Component() { gameObject = nullptr; }
-	virtual ~Component() { gameObject = nullptr; }
-	virtual bool OnCreate(GameObject*) = 0;
-	virtual void Update(const float deltaTime_) = 0;
+	Component(); //{ gameObject = nullptr; }
+	virtual ~Component(); //{ gameObject = nullptr; }
+	virtual bool OnCreate(GameObject* gameObject_);
+	virtual void Update(const float deltaTime_);
 
 protected:
 	GameObject* gameObject;

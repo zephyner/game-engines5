@@ -32,15 +32,17 @@ public:
 
 	//component add it here
 	template <class T>
-	void AddComponent() {}
+	void AddComponent();
+
 	template <class T>
-	T* GetComponent() {}
+	T* GetComponent();
+
 	template <class T>
-	void RemoveComponent() {}
+	void RemoveComponent();
 
 private:
 
-	std::vector<Component*> Containters;
+	std::vector<Component*> component;
 
 	Model* model;
 	glm::vec3 position;
@@ -56,5 +58,3 @@ private:
 };
 
 #endif // !GAMEOBJECT_H
-
-

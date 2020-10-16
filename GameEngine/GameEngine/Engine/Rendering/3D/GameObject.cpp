@@ -26,7 +26,7 @@ GameObject::~GameObject()
 void GameObject::OnDestroy()
 {
 	model = nullptr;
-	Containters.clear();
+	component.clear();
 }
 
 void GameObject::Render(Camera* camera_)
@@ -40,6 +40,7 @@ void GameObject::Render(Camera* camera_)
 void GameObject::Update(const float deltaTime_)
 {
 	SetAngle(angle + 0.005f);
+	component;
 }
 
  glm::vec3 GameObject::GetPosition() const
