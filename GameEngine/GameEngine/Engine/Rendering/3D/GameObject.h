@@ -59,7 +59,7 @@ public:
 	template <class T>
 	T* GetComponent() 
 	{ 
-		for (Component* comp : components)
+		for (Component* comp : component)
 			if (dynamic_cast<T>(*comp))
 				return (T*)comp;
 		return nullptr;
