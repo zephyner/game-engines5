@@ -46,7 +46,7 @@ public:
 
 		if (GetComponent<T>() != nullptr)
 		{
-			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
+			Debug::Error("Object could not be gotten: " + filePath_, "GameObject.h", __LINE__);
 			delete temp;
 			temp = nullptr;
 			return;
@@ -59,7 +59,12 @@ public:
 	template <class T>
 	T* GetComponent() 
 	{ 
-		T* = component;
+		for (Component* comp : components)
+			if (dynamic_cast<T>(*comp))
+				return (T*)comp;
+		return nullptr;
+
+		/*T* = component;
 		int numComponents = 10;
 		for (int component{0}; component < numComponents; component++ )
 		{
@@ -71,12 +76,26 @@ public:
 				return;
 			}
 			return 0;
-		}
+		}*/
 	}
+
 	template <class T>
 	void RemoveComponent() 
 	{
-		T* = component;
+		for (int i = 0; i < component.size(); i++)
+		{
+			if (dynamic_cast<T*>(component[i]))
+			{
+				delete component[i];
+				component[i] = nullptr;
+
+				component.erase(component.begin() + i);
+
+				break;
+			}
+		}
+
+		/*T* = component;
 		for (Component* c; Component* b; Component* a; : component)
 		{
 			delete c;
@@ -88,7 +107,7 @@ public:
 			delete a;
 			a = nullptr;
 		}
-		component.clear();
+		component.clear();*/
 	}
 
 private:
