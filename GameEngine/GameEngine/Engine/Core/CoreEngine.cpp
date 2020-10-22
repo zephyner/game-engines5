@@ -44,6 +44,9 @@ bool CoreEngine::OnCreate(std::string name_, int width_, int height_)
     MouseEventListener::RegisterEngineObject(this); //register the core engine because its the engine we can use this.
     ShaderHandler::GetInstance()->CreateProgram("ColourShader", "Engine/Shaders/ColourVertexShader.glsl", "Engine/Shaders/ColourFragmentShader.glsl");
     ShaderHandler::GetInstance()->CreateProgram("basicShader", "Engine/Shaders/VertexShader.glsl", "Engine/Shaders/FragmentShader.glsl");
+    //adding gui shaders
+    ShaderHandler::GetInstance()->CreateProgram("GuiShader", "Engine/Shaders/SpriteVertShader.glsl", "Engine/Shaders/SpriteFragShader.glsl");
+
 
     if (gameInterFace) // gameInterface != nullptr;
     {
@@ -101,12 +104,14 @@ void CoreEngine::Render()
     if (gameInterFace)
     {
         gameInterFace->Render();
-        /*gameInterFace->Draw();*/
+        
     }
     
     //RENDER GAME 
     SDL_GL_SwapWindow(window->GetWindow());
 
+    //draw gui
+    
 }
    
 void CoreEngine::OnDestroy()

@@ -42,6 +42,12 @@ void Game1::Render()
 	currentScene->Render();
 }
 
+//added draw function
+void Game1::Draw()
+{
+
+}
+
 void Game1::BuildScene()
 {
 	delete currentScene;

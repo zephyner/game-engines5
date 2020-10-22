@@ -16,6 +16,8 @@ public:
 	virtual void Update(const float deltaTime_);
 	virtual void Render();
 	virtual void OnDestroy();
+	//adding draw
+	virtual void Draw();
 
 private:
 	int currentSceneNum;

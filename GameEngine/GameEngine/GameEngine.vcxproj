@@ -30,6 +30,7 @@
     <ClCompile Include="Game\Game1.cpp" />
     <ClCompile Include="Engine\FX\LightSource.cpp" />
     <ClCompile Include="Engine\Rendering\3D\LoadOBJModel.cpp" />
+    <ClCompile Include="Engine\Rendering\3D\GUIObject.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Engine\Core\Window.cpp" />
     <ClCompile Include="Engine\Core\Timer.cpp" />
@@ -74,6 +75,7 @@
     <ClInclude Include="Engine\Graphics\MaterialHandler.h" />
     <ClInclude Include="Engine\FX\MaterialLoader.h" />
     <ClInclude Include="Engine\Rendering\3D\SpriteSurface.h" />
+    <ClInclude Include="Engine\Rendering\3D\GUIObject.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Shaders\ColourFragmentShader.glsl" />

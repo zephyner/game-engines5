@@ -33,7 +33,6 @@
 //private:
 //	void GenerateBuffers();
 //	
-//
 //	glm::vec2 scale;
 //	float angle, width, height;
 //	std::string imagename;

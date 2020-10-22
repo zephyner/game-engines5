@@ -38,7 +38,7 @@ public:
 		
 		if (dynamic_cast<Component*>(temp) == nullptr)
 		{
-			Debug::Error("Object is not child of component: " + filePath_, "GameObject.h", __LINE__);
+			Debug::Error("Object is not child of component: ", "GameObject.h", __LINE__);
 			delete temp;
 			temp = nullptr;
 			return;
@@ -46,7 +46,7 @@ public:
 
 		if (GetComponent<T>() != nullptr)
 		{
-			Debug::Error("Object could not be gotten: " + filePath_, "GameObject.h", __LINE__);
+			Debug::Error("Object could not be gotten: ", "GameObject.h", __LINE__);
 			delete temp;
 			temp = nullptr;
 			return;
