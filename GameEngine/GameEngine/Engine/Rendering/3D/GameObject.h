@@ -63,20 +63,6 @@ public:
 			if (dynamic_cast<T>(*comp))
 				return (T*)comp;
 		return nullptr;
-
-		/*T* = component;
-		int numComponents = 10;
-		for (int component{0}; component < numComponents; component++ )
-		{
-			if (component <= 1)
-			{
-				Component* c = dynamic_cast<Component*>(c);
-				Component* b = dynamic_cast<Component*>(b);
-				Component* a = dynamic_cast<Component*>(a);
-				return;
-			}
-			return 0;
-		}*/
 	}
 
 	template <class T>
@@ -94,20 +80,6 @@ public:
 				break;
 			}
 		}
-
-		/*T* = component;
-		for (Component* c; Component* b; Component* a; : component)
-		{
-			delete c;
-			c = nullptr;
-
-			delete b;
-			b = nullptr;
-
-			delete a;
-			a = nullptr;
-		}
-		component.clear();*/
 	}
 
 private:
