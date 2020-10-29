@@ -33,7 +33,7 @@ private:
 	glm::vec2 angle;
 	glm::vec2 colour;
 	
-	float angle, width, height;
+	float width, height;
 
 	GLuint VAO, VBO;
 };

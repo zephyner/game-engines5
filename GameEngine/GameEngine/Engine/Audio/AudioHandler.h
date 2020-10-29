@@ -41,6 +41,8 @@ private:
 	void Update(int channelID_, glm::vec3 pos_, glm::vec3 vel_);
 	bool isPlaying(int channelID_);
 
+	friend class AudioSource;
+
 };
 
 #endif // !AUDIOHANDLER_H

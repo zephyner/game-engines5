@@ -1,153 +1,16 @@
-﻿  Camera.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-  CoreEngine.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Core\CoreEngine.cpp(10,11): warning C4244: '=': conversion from 'float' to 'unsigned int', possible loss of data
-  GameObject.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-  EventListener.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-  GameScene.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-  Game1.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-  Main.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-  StartScene.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-  MouseEventListener.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(86,44): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(89,27): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(90,27): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(97,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Event\MouseEventListener.cpp(98,13): warning C4244: '=': conversion from 'int' to 'T', possible loss of data
-          with
-          [
-              T=float
-          ]
-  SceneGraph.cpp
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(41,56): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C2065: 'filePath_': undeclared identifier
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): error C3861: 'filePath_': identifier not found
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GameObject.h(49,50): message : This diagnostic occurred in the compiler generated function 'void GameObject::AddComponent(void)'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\CollisionDetection.h(6,18): warning C4099: 'BoundingBox': type name first seen using 'struct' now seen using 'class'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+﻿  AudioHandler.cpp
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Audio\AudioHandler.cpp(35,16): warning C4834: discarding return value of function with 'nodiscard' attribute
+  AudioSource.cpp
+  GUIObject.cpp
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(21,20): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(21,20): message : This diagnostic occurred in the compiler generated function 'void GUIObject::AddGUIComponent(void)'
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(44,30): error C2760: syntax error: unexpected token ':', expected ';'
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(44,30): message : This diagnostic occurred in the compiler generated function 'T *GUIObject::GetGUIComponent(void)'
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(60,24): error C2065: 'component': undeclared identifier
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(60,24): message : This diagnostic occurred in the compiler generated function 'void GUIObject::RemoveGUIComponent(void)'
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(60,24): error C3861: 'component': identifier not found
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\GUIObject.h(60,24): message : This diagnostic occurred in the compiler generated function 'void GUIObject::RemoveGUIComponent(void)'
+  SpriteSurface.cpp
   Generating Code...
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\SpriteSurface.cpp(44): error C4716: 'SpriteSurface::GetWidth': must return a value
+C:\Users\Kymani\Documents\GitHub\game-engines5\GameEngine\GameEngine\Engine\Rendering\3D\SpriteSurface.cpp(49): error C4716: 'SpriteSurface::GetHeight': must return a value
