@@ -32,8 +32,8 @@
     <ClCompile Include="Game\Game1.cpp" />
     <ClCompile Include="Engine\FX\LightSource.cpp" />
     <ClCompile Include="Engine\Rendering\3D\LoadOBJModel.cpp" />
-    <ClCompile Include="Engine\Rendering\3D\GUIObject.cpp" />
-    <ClCompile Include="Engine\Rendering\3D\GUIImageComponent.cpp" />
+    <ClCompile Include="Engine\Rendering\2D\GUIObject.cpp" />
+    <ClCompile Include="Engine\Rendering\2D\GUIImageComponent.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Engine\Core\Window.cpp" />
     <ClCompile Include="Engine\Core\Timer.cpp" />
@@ -46,7 +46,7 @@
     <ClCompile Include="Engine\Rendering\SceneGraph.cpp" />
     <ClCompile Include="Engine\Graphics\MaterialHandler.cpp" />
     <ClCompile Include="Engine\FX\MaterialLoader.cpp" />
-    <ClCompile Include="Engine\Rendering\3D\SpriteSurface.cpp" />
+    <ClCompile Include="Engine\Rendering\2D\SpriteSurface.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Audio\AudioHandler.h" />
@@ -65,7 +65,7 @@
     <ClInclude Include="Engine\Rendering\3D\Component.h" />
     <ClInclude Include="Engine\Rendering\3D\GameObject.h" />
     <ClInclude Include="Engine\Event\EventListener.h" />
-    <ClInclude Include="Engine\Rendering\3D\GUIComponent.h" />
+    <ClInclude Include="Engine\Rendering\2D\GUIComponent.h" />
     <ClInclude Include="Game\Scenes\GameScene.h" />
     <ClInclude Include="Game\Game1.h" />
     <ClInclude Include="Game\Scenes\StartScene.h" />
@@ -79,14 +79,16 @@
     <ClInclude Include="Engine\Rendering\SceneGraph.h" />
     <ClInclude Include="Engine\Graphics\MaterialHandler.h" />
     <ClInclude Include="Engine\FX\MaterialLoader.h" />
-    <ClInclude Include="Engine\Rendering\3D\SpriteSurface.h" />
-    <ClInclude Include="Engine\Rendering\3D\GUIObject.h" />
-    <ClInclude Include="Engine\Rendering\3D\GUIImageComponent.h" />
+    <ClInclude Include="Engine\Rendering\2D\SpriteSurface.h" />
+    <ClInclude Include="Engine\Rendering\2D\GUIObject.h" />
+    <ClInclude Include="Engine\Rendering\2D\GUIImageComponent.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Shaders\ColourFragmentShader.glsl" />
     <None Include="Engine\Shaders\ColourVertexShader.glsl" />
     <None Include="Engine\Shaders\FragmentShader.glsl" />
+    <None Include="Engine\Shaders\SpriteFragShader.glsl" />
+    <None Include="Engine\Shaders\SpriteVertShader.glsl" />
     <None Include="Engine\Shaders\VertexShader.glsl" />
   </ItemGroup>
   <ItemGroup>

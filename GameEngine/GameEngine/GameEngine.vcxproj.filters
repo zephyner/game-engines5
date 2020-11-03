@@ -90,13 +90,13 @@
     <ClCompile Include="Engine\Audio\AudioSource.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Rendering\3D\SpriteSurface.cpp">
+    <ClCompile Include="Engine\Rendering\2D\GUIImageComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Rendering\3D\GUIObject.cpp">
+    <ClCompile Include="Engine\Rendering\2D\GUIObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Rendering\3D\GUIImageComponent.cpp">
+    <ClCompile Include="Engine\Rendering\2D\SpriteSurface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -188,16 +188,16 @@
     <ClInclude Include="Engine\Audio\AudioSource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Rendering\3D\SpriteSurface.h">
+    <ClInclude Include="Engine\Rendering\2D\GUIComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Rendering\3D\GUIObject.h">
+    <ClInclude Include="Engine\Rendering\2D\GUIImageComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Rendering\3D\GUIComponent.h">
+    <ClInclude Include="Engine\Rendering\2D\GUIObject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Rendering\3D\GUIImageComponent.h">
+    <ClInclude Include="Engine\Rendering\2D\SpriteSurface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -206,6 +206,8 @@
     <None Include="Engine\Shaders\ColourFragmentShader.glsl" />
     <None Include="Engine\Shaders\VertexShader.glsl" />
     <None Include="Engine\Shaders\FragmentShader.glsl" />
+    <None Include="Engine\Shaders\SpriteFragShader.glsl" />
+    <None Include="Engine\Shaders\SpriteVertShader.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Resources\Textures\cubetext1.jpg">
