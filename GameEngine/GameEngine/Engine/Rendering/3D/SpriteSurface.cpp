@@ -10,7 +10,7 @@ SpriteSurface::SpriteSurface(std::string imageName_, glm::vec2 scale_, float ang
 	//scale set to 1.0f and angle set to 0 ->
 
 	//create texture based on image name given
-	
+
 
 	//save textureID
 

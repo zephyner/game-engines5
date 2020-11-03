@@ -14,7 +14,7 @@ public:
 	virtual void Render();
 	//draw function for gui update
 	virtual void Draw();
-private: 
+private:
 
 };
 #endif //!GAMESCENE_H

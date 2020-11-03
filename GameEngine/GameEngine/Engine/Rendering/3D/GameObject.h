@@ -82,9 +82,9 @@ public:
 	}
 
 private:
-	
+
 	std::vector<Component*> component;
-	
+
 	Model* model;
 	glm::vec3 position;
 	float angle;

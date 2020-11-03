@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Engine\Audio\AudioSource.cpp" />
     <ClCompile Include="Engine\Audio\AudioHandler.cpp" />
+    <ClCompile Include="Engine\Audio\AudioSource.cpp" />
     <ClCompile Include="Engine\Math\CollisionHandler.cpp" />
     <ClCompile Include="Engine\Math\CollisionDetection.cpp" />
     <ClCompile Include="Engine\Camera\Camera.cpp" />
@@ -49,8 +49,8 @@
     <ClCompile Include="Engine\Rendering\3D\SpriteSurface.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Engine\Audio\AudioSource.h" />
     <ClInclude Include="Engine\Audio\AudioHandler.h" />
+    <ClInclude Include="Engine\Audio\AudioSource.h" />
     <ClInclude Include="Engine\Math\CollisionHandler.h" />
     <ClInclude Include="Engine\Math\CollisionDetection.h" />
     <ClInclude Include="Engine\Camera\Camera.h" />
@@ -78,9 +78,9 @@
     <ClInclude Include="Engine\Rendering\SceneGraph.h" />
     <ClInclude Include="Engine\Graphics\MaterialHandler.h" />
     <ClInclude Include="Engine\FX\MaterialLoader.h" />
+    <ClInclude Include="Engine\Rendering\3D\SpriteSurface.h" />
     <ClInclude Include="Engine\Rendering\3D\GUIComponent.h" />
     <ClInclude Include="Engine\Rendering\3D\GUIObject.h" />
-    <ClInclude Include="Engine\Rendering\3D\SpriteSurface.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Shaders\ColourFragmentShader.glsl" />
@@ -148,7 +148,6 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\GameDev\OpenGL\include;C:\GameDev\SDL\include;C:\GameDev\Audio\FMOD Studio API Windows\api\core\inc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -178,13 +177,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\GameDev\OpenGL\include;C:\GameDev\SDL\include;C:\GameDev\Audio\FMOD Studio API Windows\api\core\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>C:\GameDev\SDL\lib;C:\GameDev\OpenGL\lib;C:\GameDev\Audio\FMOD Studio API Windows\api\core\lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>SDL2.lib;SDL2_image.lib;SDL2main.lib;SDL2test.lib;glew32.lib;glew32s.lib;opengl32.lib;fmod_vc.lib;fmodL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

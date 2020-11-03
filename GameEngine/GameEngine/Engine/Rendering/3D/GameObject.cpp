@@ -5,7 +5,7 @@ GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr)
 	model = model_;
 	position = position_;
 	angle = 0.0f;
-	rotation = glm::vec3(0.0f,1.0f,0.0f);
+	rotation = glm::vec3(0.0f, 1.0f, 0.0f);
 	scale = glm::vec3(1.0f);
 	tag = "";
 	hit = false;
@@ -17,7 +17,7 @@ GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr)
 	}
 
 }
-GameObject::~GameObject(){
+GameObject::~GameObject() {
 	OnDestroy();
 }
 void GameObject::OnDestroy()
@@ -40,15 +40,15 @@ void GameObject::Update(const float deltaTime_)
 	component;
 }
 
- glm::vec3 GameObject::GetPosition() const
+glm::vec3 GameObject::GetPosition() const
 {
-	 return position;
+	return position;
 }
 float GameObject::GetAngle() const
 {
 	return angle;
 }
-glm::vec3 GameObject:: GetRotation() const
+glm::vec3 GameObject::GetRotation() const
 {
 	return rotation;
 }
@@ -102,7 +102,7 @@ void GameObject::SetScale(glm::vec3 scale_)
 		box.minVert *= scale.x > 1.0f ? 1.0f : (scale.x / 2.0f);
 		box.maxVert *= scale.x > 1.0f ? 1.0f : (scale.x / 2.0f);
 	}
-	
+
 }
 
 //scenegraph stuff week 11

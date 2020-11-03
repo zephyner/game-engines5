@@ -37,7 +37,7 @@ void Game1::Update(const float deltaTime_)
 }
 void Game1::Render()
 {
-	
+
 
 	currentScene->Render();
 }

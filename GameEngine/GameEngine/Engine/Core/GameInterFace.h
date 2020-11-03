@@ -3,7 +3,7 @@
 
 class GameInterFace
 {
-public : 
+public:
 	GameInterFace() { }
 	virtual ~GameInterFace() { }
 

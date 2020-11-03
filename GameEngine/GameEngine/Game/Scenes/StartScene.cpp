@@ -9,7 +9,7 @@ StartScene:: ~StartScene()
 
 }
 
-bool StartScene:: OnCreate()
+bool StartScene::OnCreate()
 {
 	Debug::Info("Creating Start Scene", "StartScene.cpp", __LINE__);
 	CoreEngine::GetInstance()->SetCurrentScene(1);

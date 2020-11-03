@@ -5,7 +5,7 @@
 #include "Scenes/StartScene.h"
 #include "Scenes/GameScene.h"
 
-class Game1: public GameInterFace 
+class Game1 : public GameInterFace
 {
 public:
 

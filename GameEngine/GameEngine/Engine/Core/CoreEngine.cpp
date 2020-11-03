@@ -3,7 +3,7 @@
 std::unique_ptr<CoreEngine> CoreEngine::engineInstance = nullptr;
 
 
-CoreEngine::CoreEngine()  
+CoreEngine::CoreEngine()
 {
     window = nullptr;
     isRunning = false;
@@ -18,7 +18,7 @@ CoreEngine::~CoreEngine()
     //stops the error from popping up since being destroyed twice. here then when isrunning is false.
 }
 
-CoreEngine* CoreEngine::GetInstance() 
+CoreEngine* CoreEngine::GetInstance()
 {
     if (engineInstance.get() == nullptr)
     {
@@ -70,7 +70,7 @@ void CoreEngine::Run()
         Update(timer.GetDeltaTime());
         Render();
         SDL_Delay(timer.GetSleepTime(fps));
-       
+
     }
     if (!isRunning)
     {
@@ -85,7 +85,7 @@ bool CoreEngine::GetIsRunning() const
 }
 
 
-void CoreEngine:: Update(const float deltaTime_)
+void CoreEngine::Update(const float deltaTime_)
 {
     if (gameInterFace)
     {
@@ -94,7 +94,7 @@ void CoreEngine:: Update(const float deltaTime_)
 }
 void CoreEngine::Render()
 {
-    
+
     glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -104,12 +104,12 @@ void CoreEngine::Render()
         //add so it can draw after rendering
         gameInterFace->Draw();
     }
-    
+
     //RENDER GAME 
     SDL_GL_SwapWindow(window->GetWindow());
 
 }
-   
+
 void CoreEngine::OnDestroy()
 {
     TextureHandler::GetInstance()->OnDestroy();
@@ -128,7 +128,7 @@ void CoreEngine::OnDestroy()
     SDL_Quit();
     exit(0);
 }
-   
+
 void CoreEngine::SetGameInterFace(GameInterFace* gameInterface_)
 {
     gameInterFace = gameInterface_;
