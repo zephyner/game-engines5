@@ -1,7 +1,5 @@
 #include "GameObject.h"
 
-
-
 GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr)
 {
 	model = model_;
@@ -19,8 +17,7 @@ GameObject::GameObject(Model* model_, glm::vec3 position_) : model(nullptr)
 	}
 
 }
-GameObject::~GameObject()
-{
+GameObject::~GameObject(){
 	OnDestroy();
 }
 void GameObject::OnDestroy()
@@ -108,6 +105,7 @@ void GameObject::SetScale(glm::vec3 scale_)
 	
 }
 
+//scenegraph stuff week 11
 void GameObject::SetTag(std::string tag_)
 {
 	tag = tag_;
@@ -131,4 +129,3 @@ void GameObject::SetHit(bool hit_, int buttonType_)
 	}
 
 }
-

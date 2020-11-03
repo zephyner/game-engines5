@@ -11,7 +11,7 @@ AudioHandler* AudioHandler::GetInstance()
 	return audioInstnace.get();
 }
 
-bool AudioHandler::Initialize(glm::vec3 pos_ = glm::vec3(0.0, 0.0, 0.0), glm::vec3 vel_ = glm::vec3(0.0, 0.0, 0.0), 
+bool AudioHandler::Initialize(glm::vec3 pos_ = glm::vec3(0.0, 0.0, 0.0), glm::vec3 vel_ = glm::vec3(0.0, 0.0, 0.0),
 	glm::vec3 forward_ = glm::vec3(0.0, 0.0, -1.0), glm::vec3 up_ = glm::vec3(0.0, 1.0, 0.0))
 {
 	FMOD::System_Create(&fmodSystem);
@@ -19,13 +19,13 @@ bool AudioHandler::Initialize(glm::vec3 pos_ = glm::vec3(0.0, 0.0, 0.0), glm::ve
 		return false;
 	}
 	else {
-	fmodSystem->init(5, FMOD_INIT_NORMAL | FMOD_3D | FMOD_INIT_3D_RIGHTHANDED, nullptr);
-	FMOD_VECTOR fmodPos = glmToFmod(pos_);
-	FMOD_VECTOR fmodVel = glmToFmod(vel_);
-	FMOD_VECTOR fmodForward = glmToFmod(forward_);
-	FMOD_VECTOR fmodUp = glmToFmod(up_);
-	fmodSystem->set3DListenerAttributes(0, &fmodPos, &fmodVel, &fmodForward, &fmodUp);
-	return true;
+		fmodSystem->init(5, FMOD_INIT_NORMAL | FMOD_3D | FMOD_INIT_3D_RIGHTHANDED, nullptr);
+		FMOD_VECTOR fmodPos = glmToFmod(pos_);
+		FMOD_VECTOR fmodVel = glmToFmod(vel_);
+		FMOD_VECTOR fmodForward = glmToFmod(forward_);
+		FMOD_VECTOR fmodUp = glmToFmod(up_);
+		fmodSystem->set3DListenerAttributes(0, &fmodPos, &fmodVel, &fmodForward, &fmodUp);
+		return true;
 	}
 }
 
@@ -38,7 +38,7 @@ void AudioHandler::OnDestroy()
 		//delete &m
 	}
 	for (auto m : channelMap) {
-		
+
 		m.second->stop();
 		m.second = nullptr;
 		//delete &m;
@@ -102,7 +102,7 @@ FMOD::Sound* AudioHandler::getSound(std::string name_)
 	return nullptr;
 }
 
-int AudioHandler::playSound(std::string name_, glm::vec3 pos_, glm::vec3 vel_ = glm::vec3(0.0,0.0,0.0), float volume_ = 1.0f)
+int AudioHandler::playSound(std::string name_, glm::vec3 pos_, glm::vec3 vel_ = glm::vec3(0.0, 0.0, 0.0), float volume_ = 1.0f)
 {
 	int channelID = -1;
 	if (!getSound(name_)) {
@@ -131,7 +131,7 @@ int AudioHandler::playSound(std::string name_, glm::vec3 pos_, glm::vec3 vel_ = 
 	return channelID;
 }
 
-void AudioHandler::Update(int channelID_, glm::vec3 pos_, glm::vec3 vel_ = glm::vec3(0.0,0.0,0.0))
+void AudioHandler::Update(int channelID_, glm::vec3 pos_, glm::vec3 vel_ = glm::vec3(0.0, 0.0, 0.0))
 {
 	if (channelMap[channelID_]) {
 		FMOD_VECTOR fmodPos = glmToFmod(pos_);

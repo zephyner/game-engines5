@@ -116,8 +116,3 @@ void SceneGraph::Render(Camera* camera_)
 		}
 	}
 }
-
-void SceneGraph::Draw()
-{
-
-}

@@ -15,9 +15,9 @@ public:
 	virtual bool OnCreate();
 	virtual void Update(const float deltaTime_);
 	virtual void Render();
-	virtual void OnDestroy();
-	//adding draw
+	//draw function for gui update
 	virtual void Draw();
+	virtual void OnDestroy();
 
 private:
 	int currentSceneNum;

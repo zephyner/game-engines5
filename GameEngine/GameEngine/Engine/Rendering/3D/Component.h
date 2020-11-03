@@ -11,8 +11,8 @@ class Component
 {
 public:
 
-	Component(); //{ gameObject = nullptr; }
-	virtual ~Component(); //{ gameObject = nullptr; }
+	Component(); //{gameObject = nullptr;}
+	virtual ~Component(); 
 	virtual bool OnCreate(GameObject* gameObject_);
 	virtual void Update(const float deltaTime_);
 
@@ -21,3 +21,4 @@ protected:
 
 };
 #endif // !COMPONENT_H
+

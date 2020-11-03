@@ -21,7 +21,7 @@ public:
 	BoundingBox GetBoundingBox();
 	std::string GetTag() const;
 	bool GetHit() const;
-	
+
 	void SetPosition(glm::vec3 Position_);
 	void SetAngle(float angle_);
 	void SetRotation(glm::vec3 rotation_);
@@ -30,12 +30,11 @@ public:
 	void SetHit(bool hit_, int buttonType_);
 	void OnDestroy();
 
-	//component add it here
 	template <class T>
-	void AddComponent() 
-	{ 
-		T* temp = new T(); 
-		
+	void AddComponent()
+	{
+		T* temp = new T();
+
 		if (dynamic_cast<Component*>(temp) == nullptr)
 		{
 			Debug::Error("Object is not child of component: ", "GameObject.h", __LINE__);
@@ -54,11 +53,11 @@ public:
 
 		temp->OnCreate(this);
 		component.push_back(temp);
-
 	}
+
 	template <class T>
-	T* GetComponent() 
-	{ 
+	T* GetComponent()
+	{
 		for (Component* comp : component)
 			if (dynamic_cast<T>(*comp))
 				return (T*)comp;
@@ -66,7 +65,7 @@ public:
 	}
 
 	template <class T>
-	void RemoveComponent() 
+	void RemoveComponent()
 	{
 		for (int i = 0; i < component.size(); i++)
 		{
@@ -83,9 +82,9 @@ public:
 	}
 
 private:
-
+	
 	std::vector<Component*> component;
-
+	
 	Model* model;
 	glm::vec3 position;
 	float angle;
@@ -100,3 +99,5 @@ private:
 };
 
 #endif // !GAMEOBJECT_H
+
+

@@ -42,10 +42,9 @@ void Game1::Render()
 	currentScene->Render();
 }
 
-//added draw function
 void Game1::Draw()
 {
-
+	currentScene->Draw();
 }
 
 void Game1::BuildScene()

@@ -4,7 +4,7 @@
 class AudioSource : public Component
 {
 public:
-	
+
 	AudioSource(std::string name_, bool loop_, bool is3d_, bool howPlay_);
 	~AudioSource();
 	void OnCreate();
@@ -16,7 +16,7 @@ public:
 
 private:
 
-	
+
 };
 
 #endif // !AUDIOSOURCE_H
