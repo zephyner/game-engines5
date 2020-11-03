@@ -93,10 +93,10 @@
     <ClCompile Include="Engine\Rendering\3D\SpriteSurface.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Rendering\3D\GUIComponent.cpp">
+    <ClCompile Include="Engine\Rendering\3D\GUIObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Engine\Rendering\3D\GUIObject.cpp">
+    <ClCompile Include="Engine\Rendering\3D\GUIImageComponent.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -191,10 +191,13 @@
     <ClInclude Include="Engine\Rendering\3D\SpriteSurface.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Engine\Rendering\3D\GUIObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Engine\Rendering\3D\GUIComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Engine\Rendering\3D\GUIObject.h">
+    <ClInclude Include="Engine\Rendering\3D\GUIImageComponent.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
