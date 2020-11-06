@@ -15,9 +15,12 @@ void GUIObject::OnDestroy()
 	guicomponent.clear();
 }
 
-void GUIObject::Draw(Camera* camera_, glm::vec2 position_)
+void GUIObject::Draw(Camera* camera_)
 {
-	
+	for (int i = 0; i < guicomponent.size(); i++)
+	{
+		guicomponent[i]->Draw(camera_, position);
+	}
 }
 
 void GUIObject::SetTag(std::string tag_) 

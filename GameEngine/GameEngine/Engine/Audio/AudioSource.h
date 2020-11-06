@@ -6,9 +6,9 @@ class AudioSource : public Component
 public:
 
 	AudioSource(std::string name_, bool loop_, bool is3d_, bool howPlay_);
-	~AudioSource();
-	void OnCreate();
-	void Update();
+	virtual ~AudioSource();
+	virtual bool OnCreate(GameObject* gameObject_);
+	virtual void Update(const float deltaTime_);
 
 	int PlaySound();
 	bool IsPlaying();

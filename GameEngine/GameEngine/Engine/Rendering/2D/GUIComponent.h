@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <iostream>
+#include "../../Camera/Camera.h"
 
 //forward declaration
 class GUIObject;

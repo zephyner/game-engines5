@@ -7,6 +7,7 @@
 #include <glm/gtc/type_ptr.hpp>
 #include "../../Camera/Camera.h"
 #include "../../Graphics/TextureHandler.h"
+#include <glm/gtc/matrix_transform.hpp>
 
 
 //struct is public by default
@@ -22,7 +23,7 @@ public:
 	SpriteSurface(std::string imageName_, glm::vec2 scale_, float angle_, glm::vec4 tintColour_);
 	~SpriteSurface();
 
-	void Draw(Camera* camera_, std::vector<glm::vec2> postiion_);
+	void Draw(Camera* camera_, glm::vec2 position_);
 
 	float GetWidth();
 	float GetHeight();

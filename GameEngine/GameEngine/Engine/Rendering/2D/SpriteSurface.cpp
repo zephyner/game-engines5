@@ -48,7 +48,7 @@ SpriteSurface::~SpriteSurface()
 	glDeleteVertexArrays(1, &VBO);
 }
 
-void SpriteSurface::Draw(Camera* camera_, std::vector<glm::vec2> position_)
+void SpriteSurface::Draw(Camera* camera_, glm::vec2 position_)
 {
 	// set up texture information
 	glActiveTexture(GL_TEXTURE0);
@@ -65,11 +65,14 @@ void SpriteSurface::Draw(Camera* camera_, std::vector<glm::vec2> position_)
 	
 	//binding the VAO just like in mesh
 	glBindVertexArray(VAO);
-	for (int i = 0; i < position_.size(); i++)
-	{
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(position_[i]));
-		glDrawArrays(GL_TRIANGLE_STRIP, 0, vertexList.size());
-	}
+	
+	glm::mat4 model;
+	model = glm::translate(model, glm::vec3(position_.x, position_.y, 0));
+	model = glm::rotate(model, angle, glm::vec3(0, 0, 1));
+	model = glm::scale(model, glm::vec3(width*scale.x, height*scale.y, 1));
+
+	glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+	glDrawArrays(GL_TRIANGLE_STRIP, 0, vertexList.size());
 
 	glBindVertexArray(0);
 	glBindTexture(GL_TEXTURE_2D, 0);
@@ -97,11 +100,11 @@ void SpriteSurface::GenerateBuffers()
 
 	//postion
 	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)0);
+	glVertexAttribPointer(0, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)0);
 
 	//TEX COORDS
-	glEnableVertexAttribArray(2);
-	glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)offsetof(Vertex, texCoords));
+	glEnableVertexAttribArray(1);
+	glVertexAttribPointer(1, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (GLvoid*)offsetof(Vertex, texCoords));
 
 	glBindVertexArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, 0);

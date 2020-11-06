@@ -15,7 +15,7 @@ public:
 	GUIObject(glm::vec2 position_);
 	~GUIObject();
 	void OnDestroy();
-	void Draw(Camera* camera_, glm::vec2 position_);
+	void Draw(Camera* camera_);
 	void SetTag(std::string tag_);
 
 	template <class T>

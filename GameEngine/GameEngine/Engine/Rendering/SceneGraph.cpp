@@ -2,6 +2,7 @@
 
 std::unique_ptr<SceneGraph> SceneGraph::sceneGraphInstance = nullptr;
 std::map<std::string, GameObject*> SceneGraph::sceneGameObjects = std::map<std::string, GameObject*>();
+std::map<std::string, GUIObject*> SceneGraph::sceneGUIObjects = std::map<std::string, GUIObject*>();
 std::map<GLuint, std::vector<Model*>> SceneGraph::sceneModels = std::map<GLuint, std::vector<Model*>>();
 
 SceneGraph::SceneGraph()
@@ -49,6 +50,16 @@ void SceneGraph::OnDestroy()
 		}
 		sceneModels.clear();
 	}
+
+	if (sceneGUIObjects.size() > 0)
+	{
+		for (auto guiobj : sceneGUIObjects)
+		{
+			delete guiobj.second;
+			guiobj.second = nullptr;
+		}
+		sceneGUIObjects.clear();
+	}
 }
 void SceneGraph::AddModel(Model* model_)
 {
@@ -89,11 +100,47 @@ void SceneGraph::AddGameObject(GameObject* go_, std::string tag_)
 	}
 	CollisionHandler::GetInstance()->AddObject(go_);
 }
+
+void SceneGraph::AddGUIObject(GUIObject* guiobj_, std::string tag_)
+{
+	if (tag_ == "")
+	{
+		std::string newName = "GUIObject" + std::to_string(sceneGUIObjects.size() + 1);
+		guiobj_->SetTag(newName);
+		sceneGUIObjects[newName] = guiobj_;
+	}
+
+	else if (sceneGUIObjects.find(tag_) == sceneGUIObjects.end())
+	{
+		guiobj_->SetTag(tag_);
+		sceneGUIObjects[tag_] = guiobj_;
+	}
+
+	else
+	{
+		Debug::Error("Trying to add a GUI object with the tag " + tag_ + " that already exists", "SceneGraph.cpp", __LINE__);
+
+		std::string newName = "GUIObject" + std::to_string(sceneGUIObjects.size() + 1);
+		guiobj_->SetTag(newName);
+		sceneGUIObjects[newName] = guiobj_;
+	}
+	
+}
+
 GameObject* SceneGraph::GetGameObject(std::string tag_)
 {
 	if (sceneGameObjects.find(tag_) != sceneGameObjects.end())
 	{
 		return sceneGameObjects[tag_];
+	}
+	return nullptr;
+}
+
+GUIObject* SceneGraph::GetGUIObject(std::string tag_)
+{
+	if (sceneGUIObjects.find(tag_) != sceneGUIObjects.end())
+	{
+		return sceneGUIObjects[tag_];
 	}
 	return nullptr;
 }

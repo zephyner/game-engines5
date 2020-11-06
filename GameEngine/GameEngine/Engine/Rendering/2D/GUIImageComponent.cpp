@@ -17,6 +17,7 @@ bool GUIImageComponent::OnCreate(std::string imageName_, glm::vec2 offset_, glm:
 	offset = offset_;
 	//creating spritesurface object
 	sprite = new SpriteSurface(imageName_, scale_, angle_, tintColour_);
+	return true;
 }
 
 void GUIImageComponent::Draw(Camera* camera_, glm::vec2 position_)

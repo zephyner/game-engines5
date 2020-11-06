@@ -14,12 +14,12 @@ AudioSource::~AudioSource()
 
 }
 
-void AudioSource::OnCreate()
+bool AudioSource::OnCreate(GameObject* gameObject_)
 {
-
+	return 0;
 }
 
-void AudioSource::Update()
+void AudioSource::Update(const float deltaTime_)
 {
 
 }
