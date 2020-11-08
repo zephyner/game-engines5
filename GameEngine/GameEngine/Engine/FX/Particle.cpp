@@ -1,8 +1,7 @@
 #include "Particle.h"
-Particle::Particle(GLuint shaderProgram_, GLuint textureID_)
+Particle::Particle(GLuint shaderProgram_)
 {
 	shaderProgram = shaderProgram_;
-	textureID = textureID_;
 	GenerateBuffers();
 
 }
@@ -25,10 +24,10 @@ void Particle::Render(Camera* camera_)
 	glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(camera_->GetPrespective()));
 
 	//model matrix
-	glUniform3f(projLoc, camera_->GetPosition().x, camera_->GetPosition().y, camera_->GetPosition().z);
+	//glUniform3f(projLoc, camera_->GetPosition().x, camera_->GetPosition().y, camera_->GetPosition().z);
 
 	glBindVertexArray(VAO);
-	glUniform3f(tintColour, Colour.x, Colour.y, Colour.z);
+	glUniform3f(tintColour, 15, 0, 15);
 	glEnable(GL_PROGRAM_POINT_SIZE);
 	glDrawArrays(GL_POINTS, 0, 1);
 	glDisable(GL_PROGRAM_POINT_SIZE);

@@ -48,6 +48,8 @@
     <ClCompile Include="Engine\FX\MaterialLoader.cpp" />
     <ClCompile Include="Engine\Rendering\2D\SpriteSurface.cpp" />
     <ClCompile Include="Engine\FX\Particle.cpp" />
+    <ClCompile Include="Engine\FX\ParticleEmitter.cpp" />
+    <ClCompile Include="Engine\Math\Randomizer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Audio\AudioHandler.h" />
@@ -84,6 +86,8 @@
     <ClInclude Include="Engine\Rendering\2D\GUIObject.h" />
     <ClInclude Include="Engine\Rendering\2D\GUIImageComponent.h" />
     <ClInclude Include="Engine\FX\Particle.h" />
+    <ClInclude Include="Engine\FX\ParticleEmitter.h" />
+    <ClInclude Include="Engine\Math\Randomizer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Shaders\ColourFragmentShader.glsl" />

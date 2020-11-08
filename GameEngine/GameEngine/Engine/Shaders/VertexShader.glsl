@@ -23,15 +23,5 @@ void main()
 	Texcoords = texCoords;
 	FragPosition = vec3(model * vec4(position, 1.0f));
 	gl_Position = proj * view * model * vec4(position, 1.0f); 
-	gl_PointSize = gl_Position.z;
 	
-	//Particles NEEDS TO BE FIXED
-	vec4 cameraDistance = view * model * vec4(position,1.0f);
-	float Lenght = cameraDistance.x + cameraDistance.y + cameraDistance.z;
-	float Attenuation = ((sqrt(inverse(0.1))) * Lenght);
-	gl_PointSize = Attenuation * 100;
-	gl_Position = proj * view * model * vec4(position, 1.0f); 
-
-
-
 }

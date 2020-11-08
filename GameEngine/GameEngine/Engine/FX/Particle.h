@@ -9,8 +9,9 @@
 #include "../Camera/Camera.h"
 #include "../Graphics/TextureHandler.h"
 #include <glm/gtc/matrix_transform.hpp>
-
-
+#include "../Graphics/ShaderHandler.h"
+#include <iostream>
+#include "../Math/Randomizer.h"
 
 class Particle
 {
@@ -21,7 +22,7 @@ public:
 	float Size;
 	float Lifetime;
 
-	Particle(GLuint shaderProgram_, GLuint textureID_);
+	Particle(GLuint shaderProgram_);
 	~Particle();
 
 	void Render(Camera* camera_);
