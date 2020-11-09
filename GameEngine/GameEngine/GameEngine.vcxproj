@@ -50,6 +50,7 @@
     <ClCompile Include="Engine\FX\Particle.cpp" />
     <ClCompile Include="Engine\FX\ParticleEmitter.cpp" />
     <ClCompile Include="Engine\Math\Randomizer.cpp" />
+    <ClCompile Include="Engine\Rendering\OpenGLRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\Audio\AudioHandler.h" />
@@ -88,6 +89,8 @@
     <ClInclude Include="Engine\FX\Particle.h" />
     <ClInclude Include="Engine\FX\ParticleEmitter.h" />
     <ClInclude Include="Engine\Math\Randomizer.h" />
+    <ClInclude Include="Engine\Rendering\Renderer.h" />
+    <ClInclude Include="Engine\Rendering\OpenGLRenderer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Engine\Shaders\ColourFragmentShader.glsl" />
