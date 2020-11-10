@@ -1,17 +1,22 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 
-#include "../Core/Window.h"
+#include <SDL.h>
+#include <glew.h>
+#include <SDL_opengl.h>
+#include <string>
+#include <iostream>
+#include "../Core/Debug.h"
+
+//enum class for different renderer types that the engine can support
+enum class API
+{
+	OpenGL = 0, None = 1
+};
 
 class Renderer
 {
 public:
-
-	//enum class for different renderer types that the engine can support
-	enum class API
-	{
-		OpenGL = 0, SDL = 1
-	};
 
 	Renderer();
 	virtual ~Renderer();
@@ -24,6 +29,9 @@ public:
 
 		return window;
 	}
+
+	//API stored in static state
+	static API s_API;
 	
 private:
 

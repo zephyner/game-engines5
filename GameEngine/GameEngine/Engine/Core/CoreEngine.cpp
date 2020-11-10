@@ -132,6 +132,7 @@ void CoreEngine::OnDestroy()
 void CoreEngine::SetGameInterFace(GameInterFace* gameInterface_)
 {
     gameInterFace = gameInterface_;
+    Renderer* renderer;
 }
 
 int CoreEngine::GetCurrentScene()
@@ -142,6 +143,7 @@ int CoreEngine::GetCurrentScene()
 void CoreEngine::SetCurrentScene(int sceneNum_)
 {
     currentSceneNum = sceneNum_;
+    
 }
 
 void CoreEngine::Exit()

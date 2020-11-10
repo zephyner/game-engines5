@@ -13,6 +13,8 @@
 #include "../Graphics/TextureHandler.h"
 #include "../Camera/Camera.h"
 #include "../Event/EventListener.h"
+#include "../Rendering/Renderer.h"
+#include "../Rendering/OpenGLRenderer.h"
 
 class CoreEngine
 {
@@ -67,6 +69,8 @@ private:
     int currentSceneNum;
 
     Camera* camera;
+
+    Renderer* renderer;
 };
 #endif
 

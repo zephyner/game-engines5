@@ -7,6 +7,7 @@
 #include <string>
 #include <iostream>
 #include "Debug.h"
+#include "../Rendering/Renderer.h"
 
 class Window
 {
@@ -26,6 +27,8 @@ private:
 	int width, height;
 	SDL_Window* window;
 	SDL_GLContext context;
+
+	Renderer* renderer;
 };
 
 #endif // !WINDOWS_H

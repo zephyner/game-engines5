@@ -22,44 +22,48 @@ bool Window::OnCreate(std::string name_, int width_, int height_)
 		return false;
 	}
 
+	
+
 	width = width_;
 	height = height_;
 
-	SetPreAttributes();
+	////call to set the pre attributes
+	//SetPreAttributes();
 
-	window = SDL_CreateWindow(name_.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
+	////call to create window
+	//window = SDL_CreateWindow(name_.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
 
-	if (!window)// window == nullptr
-	{
-		Debug::Error("Failed to Create Window", "Window.cpp", __LINE__);
-		return false;
-	}
+	////verify window created properly, if not make sure to return nullptr
+	//if (!window)// window == nullptr
+	//{
+	//	Debug::Error("Failed to Create Window", "OpenGLRenderer.cpp", __LINE__);
+	//	return false;
+	//}
 
-	context = SDL_GL_CreateContext(window);
-	SetPostAttributes();
+	////create context and set post attributes
+	//context = SDL_GL_CreateContext(window);
+	//SetPostAttributes();
 
+	////set up GLEW
+	//GLenum error = glewInit();
 
-	GLenum error = glewInit();
+	//if (error != GLEW_OK)
+	//{
+	//	Debug::Error("Failed to initialize GLEW", "Window.cpp", __LINE__);
+	//	return false;
+	//}
 
-	if (error != GLEW_OK)
-	{
-		Debug::Error("Failed to initialize GLEW", "Window.cpp", __LINE__);
-		return false;
-	}
+	////call to enable Depth Testing
+	//glEnable(GL_DEPTH_TEST);
 
-	glEnable(GL_DEPTH_TEST);
-
-	glViewport(0, 0, width, height);
-
-
-	std::cout << "Graphics card : " << glGetString(GL_VENDOR) << std::endl;
-	std::cout << "OpenGL version : " << glGetString(GL_VERSION) << std::endl;
+	////call to set up the opengl viewport
+	//glViewport(0, 0, width, height);
 
 	return true;
 }
 void Window:: OnDestroy()
 {
-	SDL_GL_DeleteContext(context);
+	//SDL_GL_DeleteContext(context);
 	SDL_DestroyWindow(window);
 	window = nullptr;
 }
