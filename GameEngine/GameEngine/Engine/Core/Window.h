@@ -7,7 +7,7 @@
 #include <string>
 #include <iostream>
 #include "Debug.h"
-#include "../Rendering/Renderer.h"
+#include "../Rendering/OpenGLRenderer.h"
 
 class Window
 {
@@ -28,7 +28,7 @@ private:
 	SDL_Window* window;
 	SDL_GLContext context;
 
-	Renderer* renderer;
+	OpenGLRenderer* openglrenderer;
 };
 
 #endif // !WINDOWS_H

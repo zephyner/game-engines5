@@ -1,0 +1,34 @@
+{
+  "list": {
+    "object": [
+      {
+        "id": 1,
+        "name": {
+          "objectname": "Apple",
+          "rendertype": "3D"
+        }
+      },
+      {
+        "id": 2,
+        "name": {
+          "objectname": "Dice",
+          "rendertype": "3D"
+        }
+      },
+      {
+        "id": 3,
+        "name": {
+          "objectname": "GUI",
+          "rendertype": "2D"
+        }
+      },
+      {
+        "id": 4,
+        "name": {
+          "objectname": "Particles",
+          "rendertype": "FX"
+        }
+      }
+    ]
+  }
+}
