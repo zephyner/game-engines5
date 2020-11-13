@@ -16,6 +16,8 @@ public:
     float lowNumber, highNumber;
     GLuint shaderProgramName;
     ParticleEmitter(int numberOfParticles_, std::string shaderProgramName_);
+    void Update(const float deltaTime_);
+    void Render(Camera* camera_,std::vector<Particle*> VectorParticles_);
     float RNG();
 private:
     std::vector<Particle*> VectorParticles;

@@ -26,26 +26,34 @@ ParticleEmitter::ParticleEmitter(int numberOfParticles_, std::string shaderProgr
             VectorParticles.push_back(new Particle(shaderProgramName));
             float ranNum = RNG();
             VectorParticles[i]->Lifetime = RNG();
-            //deltatime missing
-            //if Lifetime is 0 or lower remove from the vector. Update
-            if (VectorParticles[i]->Lifetime <= 0)
-            {
-                //delete first
-                VectorParticles.erase(VectorParticles.begin() + i);
-            }
-            VectorParticles[i]->Position = glm::vec3(RNG(), RNG(), 0);
-
-
-            //put in render
-            for (int i = 0; i < VectorParticles.size(); i++)
-            {
-                glUseProgram(shaderProgramName);
-                VectorParticles[i]->Render(CoreEngine::GetInstance()->GetCamera());
-            }
-
         }
     }
 }
+
+void ParticleEmitter::Render(Camera* camera_, std::vector<Particle*> VectorParticles_)
+{
+    for (int i = 0; i < VectorParticles.size(); i++)
+    {
+        glUseProgram(shaderProgramName);
+        VectorParticles[i]->Render(camera_);
+    }
+}
+
+//fix this update part for deltatime and Lifetime
+void ParticleEmitter::Update(const float deltaTime_)
+{
+    for (int i = 0; i < numberOfParticles; i++)
+    {
+        if (VectorParticles[i]->Lifetime <= 0)
+        {
+            delete VectorParticles[i];
+            //delete first
+            VectorParticles.erase(VectorParticles.begin() + i);
+        }
+        VectorParticles[i]->Position = glm::vec3(RNG(), RNG(), 0);
+    }
+}
+
 
 float ParticleEmitter::RNG()
 {
