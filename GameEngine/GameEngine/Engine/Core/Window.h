@@ -22,8 +22,8 @@ public :
 	SDL_Window* GetWindow() const;
 
 private:
-	void SetPreAttributes();
-	void SetPostAttributes();
+	/*void SetPreAttributes();
+	void SetPostAttributes();*/
 	int width, height;
 	SDL_Window* window;
 	SDL_GLContext context;

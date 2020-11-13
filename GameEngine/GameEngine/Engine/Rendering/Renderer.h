@@ -20,7 +20,7 @@ public:
 
 	Renderer();
 	virtual ~Renderer();
-	virtual void OnCreate(std::string name_, int width_, int height_) = 0;
+	SDL_Window* OnCreate(std::string name_, int width_, int height_);
 
 private:
 

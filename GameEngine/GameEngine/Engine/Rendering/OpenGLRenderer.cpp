@@ -12,7 +12,7 @@ OpenGLRenderer::~OpenGLRenderer()
 	OnDestroy();
 }
 
-void OpenGLRenderer::OnCreate(std::string name_, int width_, int height_)
+SDL_Window* OpenGLRenderer::OnCreate(std::string name_, int width_, int height_)
 {
 
 	//call to set the pre attributes
@@ -47,7 +47,7 @@ void OpenGLRenderer::OnCreate(std::string name_, int width_, int height_)
 	//call to set up the opengl viewport
 	glViewport(0, 0, width, height);
 
-	return window;
+	return 0;
 }
 
 void OpenGLRenderer::OnDestroy()
