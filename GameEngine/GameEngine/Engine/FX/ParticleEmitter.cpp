@@ -1,4 +1,5 @@
 #include "ParticleEmitter.h"
+#include "../Core/CoreEngine.h"
 using namespace MATH;
 
 ParticleEmitter::ParticleEmitter(int numberOfParticles_, std::string shaderProgramName_)
@@ -17,24 +18,25 @@ ParticleEmitter::ParticleEmitter(int numberOfParticles_, std::string shaderProgr
     }
     else
     {
-        std::vector<Particle*> VectorParticles;
+
         //reserved space 
         VectorParticles.reserve(numberOfParticles_);
         for (int i = 0; i < numberOfParticles; i++)
         {
-            VectorParticles[i] = new Particle(shaderProgramName);
+            VectorParticles.push_back(new Particle(shaderProgramName));
             float ranNum = RNG();
             VectorParticles[i]->Lifetime = RNG();
             //deltatime missing
-            //if Lifetime is 0 or lower remove from the vector.
+            //if Lifetime is 0 or lower remove from the vector. Update
             if (VectorParticles[i]->Lifetime <= 0)
             {
+                //delete first
                 VectorParticles.erase(VectorParticles.begin() + i);
             }
             VectorParticles[i]->Position = glm::vec3(RNG(), RNG(), 0);
 
 
-
+            //put in render
             for (int i = 0; i < VectorParticles.size(); i++)
             {
                 glUseProgram(shaderProgramName);

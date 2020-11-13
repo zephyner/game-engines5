@@ -8,10 +8,8 @@ class OpenGLRenderer
 public:
 	OpenGLRenderer();
 	~OpenGLRenderer();
-	bool OnCreate(std::string name_, int width_, int height_);
+	void OnCreate(std::string name_, int width_, int height_);
 	void OnDestroy();
-
-	SDL_Window* GetWindow() const;
 
 private:
 	void SetPreAttributes();

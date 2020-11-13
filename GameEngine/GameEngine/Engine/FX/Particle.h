@@ -34,7 +34,7 @@ private:
 	GLuint VAO, VBO;
 	GLuint shaderProgram;
 	GLuint textureID;
-	GLuint projLoc, tintColour, viewLoc;
+	GLuint projLoc, tintColour, viewLoc, PosLoc;
 	GLuint camPosLoc;
 
 };

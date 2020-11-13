@@ -12,20 +12,20 @@ OpenGLRenderer::~OpenGLRenderer()
 	OnDestroy();
 }
 
-bool OpenGLRenderer::OnCreate(std::string name_, int width_, int height_)
+void OpenGLRenderer::OnCreate(std::string name_, int width_, int height_)
 {
 
 	//call to set the pre attributes
 	SetPreAttributes();
 
 	//call to create window
-	window = SDL_CreateWindow(name_.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
+	SDL_Window* window = SDL_CreateWindow(name_.c_str(), SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_OPENGL);
 
 	//verify window created properly, if not make sure to return nullptr
 	if (!window)// window == nullptr
 	{
 		Debug::Error("Failed to Create Window", "OpenGLRenderer.cpp", __LINE__);
-		return false;
+		return nullptr;
 	}
 	
 	//create context and set post attributes
@@ -38,7 +38,7 @@ bool OpenGLRenderer::OnCreate(std::string name_, int width_, int height_)
 	if (error != GLEW_OK)
 	{
 		Debug::Error("Failed to initialize GLEW", "Window.cpp", __LINE__);
-		return false;
+		return nullptr;
 	}
 
 	//call to enable Depth Testing

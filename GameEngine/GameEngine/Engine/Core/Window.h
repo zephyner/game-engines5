@@ -27,8 +27,6 @@ private:
 	int width, height;
 	SDL_Window* window;
 	SDL_GLContext context;
-
-	OpenGLRenderer* openglrenderer;
 };
 
 #endif // !WINDOWS_H
