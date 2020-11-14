@@ -63,7 +63,7 @@ bool Window::OnCreate(std::string name_, int width_, int height_)
 	std::cout << "Graphics card : " << glGetString(GL_VENDOR) << std::endl;
 	std::cout << "OpenGL version : " << glGetString(GL_VERSION) << std::endl;
 
-	std::ifstream file("./Resources/List.json");
+	/*std::ifstream file("./Resources/List.json");
 	nlohmann::json j;
 	file >> j;
 	file.close();
@@ -73,7 +73,20 @@ bool Window::OnCreate(std::string name_, int width_, int height_)
 
 	std::cout << "ID: " << id << std::endl;
 	std::cout << "Object name: " << objectname << std::endl;
-	std::cout << "Render type: " << rendertype << std::endl;
+	std::cout << "Render type: " << rendertype << std::endl;*/
+
+	std::ifstream file("./Resources/List.json");
+	nlohmann::json j;
+	file >> j;
+	file.close();
+
+	for (nlohmann::json o : j["list"]["object"])
+	{
+		nlohmann::json& n = o["name"];
+		std::cout << "Object name: " << n["objectname"] << std::endl;
+		std::cout << "Render type: " << n["rendertype"] << std::endl;
+		std::cout << std::endl;
+	}
 
 	return true;
 }
