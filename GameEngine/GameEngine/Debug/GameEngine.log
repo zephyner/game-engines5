@@ -4,10 +4,6 @@ C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngin
 C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
 C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
 C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\CollisionHandler.cpp(49): error C2102: '&' requires l-value
-  CollisionDetection.cpp
-C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6,20): warning C4099: 'BoundingBox': type name first seen using 'class' now seen using 'struct'
-C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\BoundingBox.h(6): message : see declaration of 'BoundingBox'
-C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\Ray.h(7,1): warning C4099: 'Ray': type name first seen using 'class' now seen using 'struct'
-C:\Users\Zephyner\Documents\GitHub\game-engines5\GameEngine\GameEngine\GameEngine\Engine\Math\Ray.h(6): message : see declaration of 'Ray'
+  Window.cpp
   OpenGLRenderer.cpp
   Generating Code...

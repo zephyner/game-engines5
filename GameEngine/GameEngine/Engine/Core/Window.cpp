@@ -1,4 +1,5 @@
 #include "Window.h"
+#include "json.hpp"
 
 Window::Window() 
 {
@@ -58,6 +59,21 @@ bool Window::OnCreate(std::string name_, int width_, int height_)
 
 	////call to set up the opengl viewport
 	//glViewport(0, 0, width, height);
+
+	std::cout << "Graphics card : " << glGetString(GL_VENDOR) << std::endl;
+	std::cout << "OpenGL version : " << glGetString(GL_VERSION) << std::endl;
+
+	std::ifstream file("./Resources/List.json");
+	nlohmann::json j;
+	file >> j;
+	file.close();
+	int id = j["list"]["object"]["id"].get<int>();
+	std::string objectname = j["list"]["object"]["name"]["objectname"].get<std::string>();
+	std::string rendertype = j["list"]["object"]["name"]["rendertype"].get<std::string>();
+
+	std::cout << "ID: " << id << std::endl;
+	std::cout << "Object name: " << objectname << std::endl;
+	std::cout << "Render type: " << rendertype << std::endl;
 
 	return true;
 }
